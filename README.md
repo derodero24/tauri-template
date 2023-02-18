@@ -16,6 +16,12 @@ pnpm i
 pnpm tauri dev
 ```
 
+3. Build
+
+```sh
+pnpm tauri build
+```
+
 ## First release
 
 1. Change the bundle identifier in `tauri.conf.json > tauri > bundle > identifier`.
