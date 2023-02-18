@@ -16,7 +16,12 @@ pnpm i
 pnpm tauri dev
 ```
 
-## Release
+## First release
 
 1. Change the bundle identifier in `tauri.conf.json > tauri > bundle > identifier`.
-1. Set new tag
+1. Set new tag "v0.0.0".
+
+## Upgrade version
+
+1. Change version in `package.json` and `src-tauri/Cargo.toml`
+1. Set new tag.
