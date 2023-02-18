@@ -23,5 +23,5 @@ pnpm tauri dev
 
 ## Upgrade version
 
-1. Change version in `package.json` and `src-tauri/Cargo.toml`
+1. Change version in `src-tauri/tauri.conf.json`
 1. Set new tag.
