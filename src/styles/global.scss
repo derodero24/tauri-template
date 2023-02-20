@@ -11,14 +11,16 @@
 
   :root {
     --backgroud-color: rgb(235, 235, 238);
-  }
+    --base-text-color: rgb(24 24 27);
 
-  :root.dark {
-    --backgroud-color: rgb(43, 43, 45);
+    &.dark {
+      --backgroud-color: rgb(43, 43, 45);
+      --base-text-color: rgb(255 255 255);
+    }
   }
 
   body {
-    @apply m-0 bg-bg duration-200;
+    @apply m-0 bg-bg text-base-text duration-200;
   }
 
   // inline -> inline-block
@@ -61,7 +63,7 @@
 
   input,
   button[type='submit'] {
-    @apply rounded-lg border-2 border-transparent bg-white px-5 py-2 text-neutral-800 shadow-md outline-none duration-200 dark:bg-neutral-700 dark:text-white;
+    @apply rounded-lg border-2 border-transparent bg-white/90 px-5 py-2 text-base-text text-opacity-80 shadow-md outline-none duration-200 dark:bg-zinc-700/90;
   }
 
   input {
@@ -69,7 +71,7 @@
   }
 
   button[type='submit'] {
-    @apply cursor-pointer font-medium hover:border-blue-400/80;
+    @apply cursor-pointer font-medium hover:border-blue-400/80 dark:hover:border-blue-500/80;
   }
 
   .row {

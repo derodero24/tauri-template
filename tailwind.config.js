@@ -20,6 +20,7 @@ module.exports = {
       },
       colors: {
         bg: 'var(--backgroud-color)',
+        'base-text': 'var(--base-text-color)',
       },
     },
   },
