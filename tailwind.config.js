@@ -18,6 +18,9 @@ module.exports = {
       minHeight: {
         'inner-screen': 'calc(var(--vh, 1vh) * 100)',
       },
+      colors: {
+        bg: 'var(--backgroud-color)',
+      },
     },
   },
   plugins: [],

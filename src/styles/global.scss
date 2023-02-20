@@ -9,8 +9,16 @@
     @apply box-border whitespace-pre-wrap;
   }
 
+  :root {
+    --backgroud-color: rgb(235, 235, 238);
+  }
+
+  :root.dark {
+    --backgroud-color: rgb(43, 43, 45);
+  }
+
   body {
-    @apply m-0 bg-neutral-100 text-neutral-800 duration-200 dark:bg-zinc-800/95 dark:text-neutral-100;
+    @apply m-0 bg-bg duration-200;
   }
 
   // inline -> inline-block
